@@ -28,16 +28,10 @@ int main(void)
 
 double zadanie(double x, double y)
 {
-    double chisl, znam, res;
+    double chisl, znam;
 
     chisl = 2.33 * log(sqrt(1.0 + pow(cos(x), 2)));
     znam = exp(y) + pow(sin(x), 2);
 
-    if (znam == 0) {
-        printf("Знаменатель равен нулю!\n");
-        return 0.0;
-    }
-
-    res = chisl / znam; 
-    return res;         
+    return chisl / znam;
 }
